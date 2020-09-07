@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PageOrientation.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout>
+        <Button Text="Orientation Page" Clicked="OrientationButton_Clicked" />
+        <Button Text="PortraitPage Page" Clicked="PortraitButton_Clicked" />
+        <Button Text="Landscape Page" Clicked="LandscapeButton_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
