@@ -29,17 +29,17 @@ namespace PageOrientation.iOS
             return base.FinishedLaunching(app, options);
         }
 
-        public Orientation allowRotation = Orientation.Any;
+        public PageOrientation allowRotation = PageOrientation.Any;
 
         public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations(UIApplication application, [Transient] UIWindow forWindow)
         {
             switch (allowRotation)
             {
-                case Orientation.Landscape:
+                case PageOrientation.Landscape:
                     return UIInterfaceOrientationMask.Landscape;
-                case Orientation.Portrait:
+                case PageOrientation.Portrait:
                     return UIInterfaceOrientationMask.Portrait;
-                case Orientation.Any:
+                case PageOrientation.Any:
                     return UIInterfaceOrientationMask.All;
             }
             return base.GetSupportedInterfaceOrientations(application, forWindow);
